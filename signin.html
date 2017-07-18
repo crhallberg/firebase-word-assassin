@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The House of Black and White</title>
+    <script defer src="https://www.gstatic.com/firebasejs/4.1.3/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/4.1.3/firebase-database.js"></script>
+    <script src="./firebase.js"></script>
+    <link rel="stylesheet" href="./style.css"/>
+    <style>
+      small {
+        display: block;
+        margin-top: 1rem;
+        font-size: 14px;
+        font-weight: normal;
+      }
+      .error { color: pink; }
+    </style>
+  </head>
+  <body>
+    <label for="name">What Is Your Name?</label>
+    <input id="name" type="text" placeholder="You are not no one. Who are you?"/>
+
+    <label for="phone">What Is The Name of your Little Bird?</label>
+    <input id="phone" type="tel" placeholder="1 555 601 0715"/>
+
+    <small>Make sure you get added to the Wall of Faces</small>
+
+    <button id="enter">Enter The House of Black and White</button>
+    <div id="code"><span class="error">not connected</span></div>
+    <script src="./signin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css"/>
+    <style>
+      img { margin-top: 1rem; }
+    </style>
+  </head>
+  <body>
+    <img src="./door.jpg"/>
+    <label>
+      Speak A Name
+      <br/><br/>
+      <input type="text" id="key"/>
+    </label>
+    <button id="join">Join</button>
+    <button id="make">Make</button>
+    <script>
+      document.getElementById('join').addEventListener('click', function() {
+        const key = document.getElementById('key').value;
+        if (!key) {
+          alert('Speak a name.');
+        }
+        window.location.assign(window.location.origin + '/got/signin.html#' + key);
+      }, false);
+      document.getElementById('make').addEventListener('click', function() {
+        const key = document.getElementById('key').value;
+        if (!key) {
+          alert('Speak a name.');
+        }
+        window.location.assign(window.location.origin + '/got/qr.html#' + key);
+      }, false);
+    </script>
+  </body>
+</html>

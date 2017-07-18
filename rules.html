@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The House of Black and White</title>
+    <style>
+      html { font-size: 18px; }
+      body {
+        padding-bottom: 1rem;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 300;
+        background-color: #333;
+        color: #aaa;
+      }
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 100;
+        text-align: center;
+      }
+      b {
+        font-weight: 400;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to the House of Black and White<span id="name"></span></h1>
+    <p><b>Your training is about to begin.</b></p>
+    <p>Soon, you will receive a message with the name of your target and the means to their end: <b>a word</b>.</p>
+    <p>To give your target The Gift of the Many-Faced God, <b>you must compel this word from their lips</b>. Some means may be harder, but we only do this when we feel you are up to the task. Use your wits, not your might, we don't want to draw attention to whom is training to serve.</p>
+    <p>If you succeed, <b>inform your target</b> of their just demise, <b>reveal your message</b> to them as proof, and <b>take a picture of their message</b> for your own reference: <b>their target is now your own</b>.</p>
+    <p>If you fall, inform the Faceless of your demise.</p>
+    <p>You will please a man if you are the last alive. Good luck.</p>
+    <small>Check the Wall of Faces if you are not familiar with your target's name. And of course, be discreet.</small>
+    <script>
+      if (window.location.hash) {
+        document.getElementById('name').innerHTML = ', ' + window.location.hash.substr(1).split(' ')[0];
+      }
+    </script>
+  </body>
+</html>

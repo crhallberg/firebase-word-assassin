@@ -1,0 +1,57 @@
+html {
+  font-size: 16px;
+}
+body {
+  margin-bottom: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-weight: 100;
+  text-align: center;
+  color: #aaa;
+  background-color: #333;
+}
+h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #888;
+}
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: .5rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+input[type="checkbox"] {
+  width: auto;
+}
+button {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  padding: .5rem;
+  font-size: 1rem;
+  color: #ddd;
+  background-color: transparent;
+}
+button:focus,
+button:active {
+  background-color: red;
+}
+
+input,
+button {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+}
+#code {
+  margin-top: 1rem;
+  font-size: 12px;
+  text-align: center;
+  color: #555;
+}
