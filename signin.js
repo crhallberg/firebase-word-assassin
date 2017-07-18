@@ -32,9 +32,7 @@ document.addEventListener(
               bird: this.responseText
             })
             .then(() => {
-              window.location.assign(
-                window.location.origin + '/got/rules.html#' + name
-              );
+              window.location.assign('./rules.html#' + name);
             });
         });
         xhr.open('GET', './encrypt.php?this=' + number);

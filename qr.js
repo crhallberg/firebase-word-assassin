@@ -28,7 +28,9 @@ document.addEventListener(
     document.getElementById('main').innerHTML =
       '<img src="' +
       qrBase +
-      encodeURIComponent(window.location.origin + '/got/signin.html#' + gameKey) +
+      encodeURIComponent(
+        window.location.href.replace(/\/qr.html.*$/, '/signin.html#' + gameKey)
+      ) +
       '"/>';
     document.getElementById('code').innerHTML = gameKey;
 
@@ -39,9 +41,7 @@ document.addEventListener(
           alert('A man is ready, is he not?');
           return;
         }
-        window.location.assign(
-          window.location.origin + '/got/begin.php?game=' + gameKey
-        );
+        window.location.assign('./begin.php?game=' + gameKey);
       },
       false
     );

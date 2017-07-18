@@ -23,15 +23,13 @@
         const key = document.getElementById('key').value;
         if (!key) {
           alert('Speak a name.');
+          return;
         }
-        window.location.assign(window.location.origin + '/got/signin.html#' + key);
+        window.location.assign('./signin.html#' + key);
       }, false);
       document.getElementById('make').addEventListener('click', function() {
         const key = document.getElementById('key').value;
-        if (!key) {
-          alert('Speak a name.');
-        }
-        window.location.assign(window.location.origin + '/got/qr.html#' + key);
+        window.location.assign('./qr.html' + (key ? '#' + key : ''));
       }, false);
     </script>
   </body>
